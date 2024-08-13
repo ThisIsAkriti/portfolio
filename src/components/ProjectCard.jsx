@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 import {CodeBracketIcon} from "@heroicons/react/24/outline"
 import { EyeIcon } from "lucide-react"
 
@@ -8,14 +8,14 @@ const ProjectCard = ({title , description , img ,gitUrl , previewUrl }) => {
       <div className="h-52 md:h-72 relative rounded-tr-xl rounded-tl-xl group" style={{background: `url(${img})` , backgroundSize: "cover"}}>
 
         <div className="overlay flex items-center justify-center absolute left-0 w-full h-full bg-black bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 gap-x-2 rounded-tr-xl rounded-tl-xl">
-          
-          <Link href={gitUrl} className="border-2 border-gray-300 rounded-full hover:border-white group/link">
-          <CodeBracketIcon className="h-8 w-8 px-1 text-gray-300 m-2 cursor-pointer group-hover/link:text-white"/>
-          </Link>
 
-          <Link href={previewUrl} className="border-2 border-gray-300 rounded-full hover:border-white group/link">
+          <a href={gitUrl} className="border-2 border-gray-300 rounded-full hover:border-white group/link" target="_blank" rel="noopener noreferrer">
+          <CodeBracketIcon className="h-8 w-8 px-1 text-gray-300 m-2 cursor-pointer group-hover/link:text-white"/>
+          </a>
+
+          <a href={previewUrl} className="border-2 border-gray-300 rounded-full hover:border-white group/link" target="_blank" rel="noopener noreferrer">
           <EyeIcon className="h-8 w-8 px-1 text-gray-300 m-2 cursor-pointer group-hover/link:text-white"/>
-          </Link>
+          </a>
 
         </div>
       </div>
