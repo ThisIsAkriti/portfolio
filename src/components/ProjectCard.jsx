@@ -4,8 +4,8 @@ import { EyeIcon } from "lucide-react"
 
 const ProjectCard = ({title , description , img ,gitUrl , previewUrl }) => {
   return (
-    <div className=" rounded-xl border-t border-t-gray-800 shadow-md shadow-gray-800 p-2 hover:shadow-none hover:border-gray-800 hover:border" >
-      <div className="h-52 md:h-72 relative rounded-tr-xl rounded-tl-xl group" style={{background: `url(${img})` , backgroundSize: "cover"}}>
+    <div className=" rounded-xl border-t border-t-gray-800 shadow-md shadow-gray-800 p-2 hover:shadow-none hover:border-pink-800 hover:border" >
+      <div className="h-52 md:h-72 relative rounded-tr-xl rounded-tl-xl group rounded-sm" style={{background: `url(${img})` , backgroundSize: "cover"}}>
 
         <div className="overlay flex items-center justify-center absolute left-0 w-full h-full bg-black bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 gap-x-2 rounded-tr-xl rounded-tl-xl">
 

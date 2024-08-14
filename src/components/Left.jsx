@@ -21,9 +21,18 @@ const Left = () => {
     </div>
     
     
-    <div className="flex gap-x-2">
-      <img src="/twitter_white.png" alt="twitter_icon" />
-      <img src="/github_white.png" alt="gitHub_icon" />
+      <div className="flex gap-x-2">
+        <div className="hover:border-t hover:shadow-md hover:shadow-pink-800 hover:border-pink-800 hover:rounded-md active:shadow-none">
+          <a href="https://x.com/Akriti06005">
+            <img src="/twitter_white.png" alt="twitter_icon" />
+          </a>
+        </div>
+        <div className="hover:border-t hover:shadow-md hover:shadow-pink-800 hover:border-pink-800 hover:rounded-full active:shadow-none">
+          <a href="https://github.com/ThisIsAkriti">
+            <img src="/github_white.png" alt="gitHub_icon" />
+          </a>
+        </div>
+        
       </div>
     </div>
   )
