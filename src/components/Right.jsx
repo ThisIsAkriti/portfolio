@@ -1,15 +1,19 @@
+
+import Contact from "./Contact"
 import HeroPage from "./HeroPage"
 import ProjectSection from "./ProjectSection"
 import Stats from "./Stats"
+import Technologies from "./Technologies"
 
 const Right = () => {
   return (
   <>
     <HeroPage/>
-    <div className="bg-black">
     <ProjectSection/>
     <Stats/>
-    </div>
+    <Technologies/>
+    <Contact/>
+   
     
   </>
     

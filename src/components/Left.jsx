@@ -1,7 +1,7 @@
 
 const Left = () => {
   return (
-    <div className="fixed lg:w-64 md:w-52 bg-black h-screen flex flex-col items-center justify-center">
+    <div className="fixed lg:w-64 md:w-52 h-screen flex flex-col items-center justify-center">
     
     <img src="/pfp.webp" alt="profile" className=" h-40 -mt-20 mb-12"/>
 

@@ -1,6 +1,6 @@
 const HeroPage = () => {
   return (
-    <div className="bg-black min-h-screen border-l border-l-gray-100">
+    <div className="min-h-screen border-l border-l-gray-100">
     <div className="flex flex-col lg:justify-center pt-28 lg:pt-0 items-center h-screen">
       <div className=" w-[400px] sm:w-[500px] md:w-[580px] lg:w-4/5 ">
         <div className="mb-4 sm:mb-0 flex justify-center sm:justify-end ">
