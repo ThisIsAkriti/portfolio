@@ -7,7 +7,7 @@ import Technologies from "./Technologies"
 
 const Right = () => {
   return (
-  <>
+  <div>
     <HeroPage/>
     <ProjectSection/>
     <Stats/>
@@ -15,7 +15,7 @@ const Right = () => {
     <Contact/>
    
     
-  </>
+  </div>
     
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 import ProjectTag from "./ProjectTag"
+import { motion } from "framer-motion"
 
 const ProjectData =[
   {
@@ -54,9 +55,19 @@ const ProjectSection = () => {
     project.tag.includes(tag)
   );
   return (
-    <div className="border-l border-l-gray-100 pb-10">
-      <h1 className="text-center text-4xl font-semibold mb-8">My Projects</h1>
-      <div className="flex flex-row justify-center md:gap-x-10 gap-x-4 mb-8 text-semibold ">
+    <div className="border-l border-l-slate-400 py-10 text-gray-400 ">
+      <motion.h1
+      whileInView = {{opacity:1 , y:0}}
+      initial= {{opacity:0 , y:-100}}
+      transition={{duration:0.8}} 
+      className="text-center text-4xl font-semibold mb-8">My Projects</motion.h1>
+
+
+      <motion.div
+       whileInView = {{opacity:1 , x:0}}
+       initial= {{opacity:0 , x:-100}}
+       transition={{duration:1}} 
+       className="flex flex-row justify-center md:gap-x-10 gap-x-4 mb-8 text-semibold ">
         <ProjectTag 
         onClick = {handleTagChange}
         name="All"
@@ -77,7 +88,8 @@ const ProjectSection = () => {
         name=".Nextjs"
         isSelect = {tag === ".Nextjs"}
         />
-      </div>
+      </motion.div>
+
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 mx-6">
       {filterProject.map((project)=>(
