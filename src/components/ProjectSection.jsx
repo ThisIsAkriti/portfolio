@@ -59,7 +59,7 @@ const ProjectSection = () => {
       <motion.h1
       whileInView = {{opacity:1 , y:0}}
       initial= {{opacity:0 , y:-100}}
-      transition={{duration:0.8}} 
+      transition={{duration:1}} 
       className="text-center text-4xl font-semibold mb-8">My Projects</motion.h1>
 
 

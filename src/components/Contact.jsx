@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { motion , useInView} from "framer-motion";
+
+
 const Contact = () => {
 
     const ref = useRef();
@@ -30,7 +32,7 @@ const Contact = () => {
     };
 
   return (
-    <div className="border-l border-l-blue-300 h-[740px] text-gray-400">
+    <div className="border-l border-l-blue-300 md:h-[620px] h-[900px] text-gray-400 ">
 
         <div className="flex flex-col justify-center h-full">
             <motion.h1
@@ -39,35 +41,19 @@ const Contact = () => {
             transition={{duration:1}} 
             ref={ref}
             className="font-bold md:text-4xl text-2xl pt-10 md:mb-14 mb-10 text-center ">&lt;Let’s Spark Some Ideas Together!✨&gt;</motion.h1>
-            <div className=" md:grid md:grid-cols-5 place-items-center flex flex-col">
+            <div className=" md:grid md:grid-cols-5 place-items-center flex flex-col md:gap-x-8 ">
 
-                <div className="flex flex-col col-span-2 justify-center">
-                    <motion.h1
-                    whileInView = {{opacity:1 , x:0}}
-                    initial= {{opacity:0 , x:-100}}
-                    transition={{duration:0.5}} 
-                    className="md:text-4xl text-3xl font-semibold mb-2 text-center">Get In Touch!</motion.h1>
-                    <motion.p
-                    whileInView = {{opacity:1 , x:0}}
-                    initial= {{opacity:0 , x:-100}}
-                    transition={{duration:1}} 
-                    className="text-center text-sm md:text-md font-semibold md:w-64 w-[360px]">Whether you have a question, a project idea, or just want to say hi, I’m all ears!🐰🐰 
-                    </motion.p>
-                </div>
-                
-                <div className="flex justify-center flex-col col-span-3 relative">
-
+                <div className="flex flex-col col-span-2 justify-center relative">
                     <motion.div
-                     initial={{opacity:1}}
-                     whileInView={{opacity:0}}
-                     transition={{delay:3,duration:1}} 
-                     className="absolute stroke-pink-900"
-                      
-                     >
-                        <svg width="450px" height="450px" viewBox="0 0 24 24">
+                        initial={{opacity:1}}
+                        whileInView={{opacity:0}}
+                        transition={{delay:2,duration:1}} 
+                        className="absolute stroke-pink-900 md:mt-0 mt-[15%] "
+                        >
+                        <svg width="350px" height="350px" viewBox="0 0 24 24">
                         <motion.path
                         fill="none"
-                        strokeWidth={0.3}
+                        strokeWidth={0.6}
                         initial={{pathLength:0}}
                         animate={ inView && {pathLength:1}}
                         transition={{duration:3}}
@@ -75,44 +61,92 @@ const Contact = () => {
                         </svg>
                     </motion.div>
 
+                    <motion.div 
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:3,duration:1}}>
+                        <motion.h1
+                        whileInView = {{opacity:1 , x:0}}
+                        initial= {{opacity:0 , x:-100}}
+                        transition={{duration:0.5}} 
+                        className="md:text-4xl text-7xl font-semibold md:mb-2 md:text-start text-center flex flex-col">Get <span> In Touch!</span></motion.h1>
+                        <motion.p
+                        whileInView = {{opacity:1 , x:0}}
+                        initial= {{opacity:0 , x:-100}}
+                        transition={{duration:1}} 
+                        className="text-center md:text-sm text-md md:text-md font-semibold md:w-64 w-[360px] md:mt-0 mt-8 md:mb-0 ">Whether you have a question, a project idea, or just want to say hi, I’m all ears!🐰🐰 
+                        </motion.p>
+                    </motion.div>
+                    
+                </div>
+                
+                <div className="flex justify-center flex-col col-span-3 md:my-0 my-20">
+                    <motion.div
+                    whileInView = {{opacity:1 , y:0}}
+                    initial= {{opacity:0 , y:-100}}
+                    transition={{duration:1}} 
+                    className="justify-center md:hidden flex">🌱🌱</motion.div>
 
                     <motion.form ref={form} onSubmit={sendEmail} action="#"
                      initial={{opacity:0}}
                      whileInView={{opacity:1}}
-                     transition={{delay:4,duration:1}} >
-                        <div className=" flex flex-col justify-center md:w-[550px] w-[420px]">
-                            <div
+                     transition={{delay:3,duration:1}} >
+                        <div className=" flex flex-col justify-center xl:w-[550px]
+                        md:w-[500px] w-[400px]">
+                            <motion.div
+                            whileInView = {{opacity:1 , x:0}}
+                            initial= {{opacity:0 , x:-100}}
+                            transition={{duration:1}} 
                             className="mx-8 my-4 mt-10 border border-pink-800 rounded-md p-1 ">
-                                <input type="name"
+                                <motion.input 
+                                whileInView = {{opacity:1 , x:0}}
+                                initial= {{opacity:0 , x:-100}}
+                                transition={{duration:1}} 
+                                type="name"
                                 name="from_name" placeholder="Name" 
                                 autoComplete="off"
                                 required
                                 className="outline-none text-pink-900 p-4 w-full rounded-md bg-transparent" />
-                            </div>
-                            <div
+                            </motion.div>
+                            <motion.div
+                            whileInView = {{opacity:1 , x:0}}
+                            initial= {{opacity:0 , x:-100}}
+                            transition={{duration:1}} 
                             
                             className="mx-8 my-4 border border-pink-800 rounded-md p-1 ">
-                                <input
+                                <motion.input 
+                                whileInView = {{opacity:1 , x:0}}
+                                initial= {{opacity:0 , x:-100}}
+                                transition={{duration:1}} 
                                 name="email" type="email" placeholder="Email" 
                                 autoComplete="off"
                                 required
                                 className="outline-none text-pink-900 p-4 w-full rounded-md bg-transparent" />
-                            </div>
-                            <div
+                            </motion.div>
+                            <motion.div
+                            whileInView = {{opacity:1 , x:0}}
+                            initial= {{opacity:0 , x:-100}}
+                            transition={{duration:1}} 
                              className="mx-8 my-4 border  border-pink-800 rounded-md p-1 ">
-                                <textarea
+                                <motion.textarea
+                                whileInView = {{opacity:1 , x:0}}
+                                initial= {{opacity:0 , x:-100}}
+                                transition={{duration:1}} 
                                 name="message"
                                 type="text" placeholder="Got something to say?" 
                                 autoComplete="off"
                                 required
                                 className="outline-none text-pink-900 p-4 w-full rounded-md bg-transparent" rows={3} />
-                            </div>
+                            </motion.div>
 
-                            <div
+                            <motion.div
+                            whileInView = {{opacity:1 , x:0}}
+                            initial= {{opacity:0 , x:-100}}
+                            transition={{duration:1}} 
                             className="mx-8 my-4 border-t shadow-md shadow-pink-900  active:shadow-none active:border hover:opacity-80 border-pink-800 rounded-md">
                                 <button className="outline-none text-pink-900 p-4 w-full font-semibold text-xl " >Send</button>
-                            </div>
-                            {success && <span className="text-green-700 text-center font-semibold">Your message has been sent Successfully!✅</span>}
+                            </motion.div>
+                            {success && <span className="text-green-700 text-center font-semibold pb-6">Your message has been sent Successfully!✅</span>}
                             {error && <span className="text-red-700 text-center font-semibold">Something went wrong❗</span>}
                         </div>
                     </motion.form>
