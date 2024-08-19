@@ -15,7 +15,7 @@ const iconVariants = (duration) => ({
 })
 const Technologies = () => {
   return (
-    <div className="border-l border-l-slate-400 h-[550px] flex flex-col justify-center text-gray-400">
+    <div className="border-l border-l-slate-400 h-[550px] flex flex-col justify-center text-gray-200" name="technologies">
       <motion.p
       whileInView = {{opacity:1 , y:0}}
       initial= {{opacity:0 , y:-100}}

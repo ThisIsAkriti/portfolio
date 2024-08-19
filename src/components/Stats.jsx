@@ -1,22 +1,26 @@
 import { motion } from "framer-motion"
 const Stats = () => {
   return (
-    <div className="border-l border-l-slate-400 pb-10 items-center flex justify-center md:px-6 pt-20 text-gray-300 ">
+    <div className="border-l border-l-slate-400 pb-10 items-center flex justify-center md:px-6 pt-20 text-gray-300" name="about">
         <div>
             <div>
                 <div className="grid grid-cols-10 gap-x-2 mx-4 md:mx-0">
+                    
                     <motion.div
                     whileInView = {{opacity:1 , y:0}}
                     initial= {{opacity:0 , y:-100}}
                     transition={{duration:1.2}}  
                     className="bg-gray-800 p-4 col-span-3 rounded-md">
+                        <a href="https://github.com/ThisIsAkriti">
                         <img className="size-10 " src="/githubWhiteBorder.png" alt="github" />
                         <div className="mt-1">
                         <p className="font-bold">Github</p>
                         <p className="font-semibold text-sm">@ThisIsAkriti</p>
                         </div>
+                        </a>
                        
                     </motion.div>
+                   
 
                     <motion.div
                      whileInView = {{opacity:1 , x:0}}
@@ -44,11 +48,13 @@ const Stats = () => {
                      initial= {{opacity:0 , x:100}}
                      transition={{duration:1.2}} 
                      className="bg-gray-900 rounded-md flex items-center py-1">
+                        <a href="https://x.com/Akriti06005">
                         <img src="/X.png" alt="Twitter" className="size-8 ml-1"/>
                         <div className="mx-2">
                         <p className="font-bold text-sm">akriti <span className="text-red-900">(acitve here)😊</span></p>
                         <p className="font-semibold text-xs">@Akrtiti06005</p>
                         </div>
+                        </a>
                         
                     </motion.div>
                 </div>

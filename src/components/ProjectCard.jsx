@@ -9,7 +9,7 @@ const ProjectCard = ({title , description , img ,gitUrl , previewUrl }) => {
       initial= {{opacity:0 , y:-100}}
       transition={{duration:1}} 
       className=" border-b border-b-slate-600 hover:border-b-pink-600 md:mx-4 mx-8 my-6" >
-      <div className="h-52 md:h-72 relative rounded-tr-xl rounded-tl-xl group rounded-sm" style={{background: `url(${img})` , backgroundSize: "cover"}}>
+      <div className="h-52 md:h-80 relative rounded-tr-xl rounded-tl-xl group rounded-sm" style={{background: `url(${img})` , backgroundSize: "cover"}}>
 
         <div className="overlay flex items-center justify-center absolute left-0 w-full h-full hidden group-hover:flex bg-black group-hover:bg-opacity-80 transition-all duration-500 gap-x-2 rounded-tr-xl rounded-tl-xl">
 

@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className='flex overflow-hidden mx-auto'>
         <div className='lg:w-64 md:w-52 flex-shrink-0 hidden lg:flex '><Left/></div>
-        <div className='lg:flex-grow'><Right/></div>
+        <div className='lg:flex-grow w-full'><Right/></div>
       </div>
       
     </div>
@@ -21,6 +21,3 @@ function App() {
 }
 
 export default App
-/*
-<div className='lg:w-64 md:w-52 flex-shrink-0 hidden lg:flex '><Left/></div>
-<div className='flex-grow'><Right/></div>*/

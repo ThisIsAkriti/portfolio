@@ -32,7 +32,7 @@ const Contact = () => {
     };
 
   return (
-    <div className="border-l border-l-blue-300 md:h-[620px] h-[900px] text-gray-400 ">
+    <div className="border-l border-l-blue-300 md:h-[620px] h-[900px] text-gray-200 " name="contact">
 
         <div className="flex flex-col justify-center h-full">
             <motion.h1
@@ -64,7 +64,7 @@ const Contact = () => {
                     <motion.div 
                     initial={{opacity:0}}
                     whileInView={{opacity:1}}
-                    transition={{delay:3,duration:1}}>
+                    transition={{delay:2.5,duration:1}}>
                         <motion.h1
                         whileInView = {{opacity:1 , x:0}}
                         initial= {{opacity:0 , x:-100}}
@@ -87,12 +87,9 @@ const Contact = () => {
                     transition={{duration:1}} 
                     className="justify-center md:hidden flex">🌱🌱</motion.div>
 
-                    <motion.form ref={form} onSubmit={sendEmail} action="#"
-                     initial={{opacity:0}}
-                     whileInView={{opacity:1}}
-                     transition={{delay:3,duration:1}} >
+                    <motion.form ref={form} onSubmit={sendEmail} action="#">
                         <div className=" flex flex-col justify-center xl:w-[550px]
-                        md:w-[500px] w-[400px]">
+                        w-[400px]">
                             <motion.div
                             whileInView = {{opacity:1 , x:0}}
                             initial= {{opacity:0 , x:-100}}

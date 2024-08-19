@@ -1,5 +1,6 @@
 
 import Contact from "./Contact"
+import Footer from "./Footer"
 import HeroPage from "./HeroPage"
 import ProjectSection from "./ProjectSection"
 import Stats from "./Stats"
@@ -13,7 +14,7 @@ const Right = () => {
     <Stats/>
     <Technologies/>
     <Contact/>
-   
+    <Footer/>
     
   </div>
     
