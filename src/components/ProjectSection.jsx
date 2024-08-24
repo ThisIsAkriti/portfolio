@@ -91,7 +91,7 @@ const ProjectSection = () => {
       </motion.div>
 
 
-      <div className="grid md:grid-cols-2 ">
+      <div className="grid md:grid-cols-2 2xl:flex 2xl:flex-wrap mx-auto">
       {filterProject.map((project)=>(
         <ProjectCard
           key={project.id}
