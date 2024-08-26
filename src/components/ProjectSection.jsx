@@ -55,7 +55,7 @@ const ProjectSection = () => {
     project.tag.includes(tag)
   );
   return (
-    <div className=" border-l border-l-slate-400 py-10 text-gray-200 px-4" name="projects">
+    <div className=" border-l border-l-slate-400 py-10 text-gray-200 px-4 2xl:px-0" name="projects">
       <motion.h1
       whileInView = {{opacity:1 , y:0}}
       initial= {{opacity:0 , y:-100}}
@@ -91,7 +91,7 @@ const ProjectSection = () => {
       </motion.div>
 
 
-      <div className="grid md:grid-cols-2 2xl:flex 2xl:flex-wrap mx-auto gap-x-10">
+      <div className="grid md:grid-cols-2 2xl:w-[1200px] 2xl:gap-x-20 mx-auto gap-x-10">
       {filterProject.map((project)=>(
         <ProjectCard
           key={project.id}

@@ -24,7 +24,7 @@ const slideVariants = {
 const HeroPage = () => {
   return (
     <>
-    <div className="relative border-l border-l-slate-400 md:min-h-screen h-[700px] xl:text-7xl lg:text-7xl md:text-6xl text-4xl md:mt-0 -mt-10" name="home">
+    <div className="relative lg:border-l lg:border-l-slate-400 md:min-h-screen h-[700px] xl:text-7xl lg:text-7xl md:text-6xl text-4xl md:mt-0 -mt-10" name="home">
 
       <div className=" pt-20 flex text-gray-300 md:gap-x-6 gap-x-2 justify-center lg:hidden">
         <motion.div className="flex justify-center items-center gap-x-1 pr-2 border-b border-b-slate-600 hover:border-b-pink-600 "
@@ -64,7 +64,7 @@ const HeroPage = () => {
 
       <div className="flex flex-col justify-center -mt-16 md:-mt-32 lg:mt-0 items-center h-full">
 
-        <div className=" w-[400px] sm:w-[600px] md:w-[760px] 2xl:w-[1400px] lg:w-[726px] pr-8 mx-auto text-gray-200 z-20">
+        <div className=" w-[400px] sm:w-[600px] md:w-[760px] 2xl:w-[1200px] lg:w-[726px] pr-8 mx-auto text-gray-200 z-20">
           <div className="mb-4 sm:mb-0 flex justify-center sm:justify-end ">
             <img src="/pfp.webp" alt="pfp" className="h-44 flex lg:hidden w-fit  sm:-mb-32" />
           </div>
@@ -73,19 +73,19 @@ const HeroPage = () => {
           variants = {container(0.8)}
           initial= 'hidden'
           animate = "visible"
-          className="text-center sm:text-start lg:text-center font-semibold sm:mb-6  lg:mb-10 mb-4 2xl:text-9xl ">&lt;Hello, I'm <span className=" text-pink-700 font-semibold">Akriti</span>!&gt;
+          className="text-center sm:text-start lg:text-center font-semibold sm:mb-6  lg:mb-10 mb-4 2xl:text-8xl ">&lt;Hello, I'm <span className=" text-pink-700 font-semibold">Akriti</span>!&gt;
           </motion.p>
           
           <motion.p
           variants = {container(1.5)}
           initial= 'hidden'
           animate = "visible" 
-          className=" font-semibold sm:mb-6 lg:mb-10 mb-4 text-center sm:text-start lg:text-center 2xl:text-9xl">&lt;<span className="   text-pink-800">Reactjs</span> Developer.&gt;</motion.p>
+          className=" font-semibold sm:mb-6 lg:mb-10 mb-4 text-center sm:text-start lg:text-center 2xl:text-8xl">&lt;<span className="   text-pink-800">Reactjs</span> Developer.&gt;</motion.p>
           
           <motion.p 
           variants = {container(2)}
           initial= 'hidden'
-          animate = "visible" className=" lg:font-bold font-semibold ml-2 text-center sm:text-start lg:text-center 2xl:text-8xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl ">Consistently Innovating, Crafting, and Advancing🌱
+          animate = "visible" className=" lg:font-bold font-semibold ml-2 text-center sm:text-start lg:text-center 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl ">Consistently Innovating, Crafting, and Advancing🌱
           </motion.p>
         </div>
 

@@ -32,7 +32,7 @@ const Contact = () => {
     };
 
   return (
-    <div className="border-l border-l-blue-300 md:h-[620px] h-[900px] text-gray-200 " name="contact">
+    <div className="lg:border-l lg:border-l-blue-300 md:h-[620px] h-[900px] text-gray-200 " name="contact">
 
         <div className="flex flex-col justify-center h-full">
             <motion.h1

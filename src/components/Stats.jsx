@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 const Stats = () => {
   return (
-    <div className="border-l border-l-slate-400 pb-10 items-center flex justify-center md:px-6 pt-20 text-gray-300" name="about">
+    <div className="lg:border-l lg:border-l-slate-400 pb-10 items-center flex justify-center md:px-6 pt-20 text-gray-300" name="about">
         <div>
             <div>
                 <div className="grid grid-cols-10 gap-x-2 mx-4 md:mx-0">

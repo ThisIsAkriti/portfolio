@@ -60,13 +60,13 @@ const Left = () => {
           >
             <div className="hover:scale-110 transition-transform duration-200 p-1">
               <Link to="technologies">
-                <img src="/techStack.png" alt="techStack" className="w-10 h-10 2xl:w-20 2xl:h-20" />
+                <img src="/techStack.png" alt="techStack" className="w-10 h-10 2xl:w-[70px] 2xl:h-[70px]" />
               </Link>
             </div>
     
             <div className="hover:scale-110 transition-transform duration-200 p-1 h-fit">
               <Link to="contact">
-                <img src="/contact.png" alt="contact" className="w-10 h-10 2xl:w-20 2xl:h-20" />
+                <img src="/contact.png" alt="contact" className="w-10 h-10 2xl:w-[70px] 2xl:h-[70px]" />
               </Link>
             </div>
           </motion.div>
