@@ -15,12 +15,12 @@ const ProjectData =[
   },
   {
     id:2,
-    title:"OkieDokie Foodie",
-    description:"A dynamic React-based application that seamlessly integrates live API to fetch real-time data, offering users the latest information on restaurant options.",
-    img:"/okiedokie.png",
+    title:"Random_Password Generator",
+    description:"A dynamic React-based password Generator! Something fun!",
+    img:"/passwordGen.png",
     tag:["All" , ".Reactjs" , "Basic"],
-    gitUrl:"https://github.com/ThisIsAkriti/React-js",
-    previewUrl:"https://okiedokie-food.web.app/"
+    gitUrl:"https://github.com/ThisIsAkriti/password_generator",
+    previewUrl:"https://password-generator-lilac-eight.vercel.app/"
   },
   {
     id:3,

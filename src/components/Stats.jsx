@@ -48,7 +48,7 @@ const Stats = () => {
                      initial= {{opacity:0 , x:100}}
                      transition={{duration:1.2}} 
                      className="bg-gray-900 rounded-md flex items-center py-1">
-                        <a href="https://x.com/Akriti06005">
+                        <a href="https://x.com/This_Is_Akriti">
                         <img src="/X.png" alt="Twitter" className="size-8 ml-1"/>
                         <div className="mx-2">
                         <p className="font-bold text-sm">akriti <span className="text-red-900">(acitve here)😊</span></p>
