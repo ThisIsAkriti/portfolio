@@ -77,7 +77,7 @@ const Left = () => {
             animate="visible"
           >
             <div className="hover:scale-110 transition-transform duration-200">
-              <a href="https://x.com/Akriti06005">
+              <a href="https://x.com/This_Is_Akriti">
                 <img src="/twitter_white.png" alt="twitter_icon" className="w-12 h-12 2xl:w-20 2xl:h-20" />
               </a>
             </div>
