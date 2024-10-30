@@ -52,7 +52,7 @@ const Stats = () => {
                         <img src="/X.png" alt="Twitter" className="size-8 ml-1"/>
                         <div className="mx-2">
                         <p className="font-bold text-sm">akriti <span className="text-red-900">(acitve here)😊</span></p>
-                        <p className="font-semibold text-xs">@Akrtiti06005</p>
+                        <p className="font-semibold text-xs">@This_Is_Akriti</p>
                         </div>
                         </a>
                         
