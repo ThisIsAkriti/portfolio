@@ -26,11 +26,21 @@ const Stats = () => {
                      whileInView = {{opacity:1 , x:0}}
                      initial= {{opacity:0 , x:100}}
                      transition={{duration:1.2}} 
-                     className="col-span-7 bg-gray-800 rounded-md px-3 pt-2">
-                        <div className="flex items-center justify-center">
-                            <img src="/gitStats.png" alt="GitStats" className="h-[88px] w-full"/>
+                     className="col-span-7 rounded-md" 
+                     style={{ 
+                        background: 'linear-gradient(135deg, #4682B4, #FF007F)',  
+                        color: 'transparent',
+                        backgroundClip: 'border-box', 
+                      }}
+                     >
+                        <div className="flex text-2xl md:text-3xl font-bold justify-center items-center h-full"
+                         style={{ 
+                            background: 'linear-gradient(135deg, #FF1493, #00008B)', 
+                            WebkitBackgroundClip: 'text', 
+                            color: 'transparent' 
+                          }}>
+                        RISING DEVELOPERS!🌿
                         </div>
-                        <p className="font-semibold text-sm">My github status!</p>
                        
                     </motion.div>
                 </div>

@@ -15,7 +15,7 @@ const iconVariants = (duration) => ({
 })
 const Technologies = () => {
   return (
-    <div className="lg:border-l lg:border-l-slate-400 h-[550px] flex flex-col justify-center text-gray-200" name="technologies">
+    <div className="lg:border-l lg:border-l-slate-400 h-[700px] flex flex-col justify-center text-gray-200" name="technologies">
       <motion.p
       whileInView = {{opacity:1 , y:0}}
       initial= {{opacity:0 , y:-100}}
@@ -90,6 +90,46 @@ const Technologies = () => {
 
             className="border-t shadow-md shadow-pink-800 border-pink-800 rounded-md px-2 py-2 ">
             <a href="https://nextjs.org/" target="_blank"  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="nextjs" width="60" height="60"/> </a> 
+            
+          </motion.div>
+
+          <motion.div
+            variants={iconVariants(5)}
+            initial= "initial"
+            animate= "animate"
+
+            className="border-t shadow-md shadow-pink-800 border-pink-800 rounded-md px-2 py-2 ">
+            <a href="https://expressjs.com" target="_blank"  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="nextjs" width="60" height="60"/> </a> 
+            
+          </motion.div>
+
+          <motion.div
+            variants={iconVariants(5.5)}
+            initial= "initial"
+            animate= "animate"
+
+            className="border-t shadow-md shadow-pink-800 border-pink-800 rounded-md px-2 py-2 ">
+            <a href="https://nodejs.org/" target="_blank"  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="nextjs" width="60" height="60"/> </a> 
+            
+          </motion.div>
+
+          <motion.div
+            variants={iconVariants(6)}
+            initial= "initial"
+            animate= "animate"
+
+            className="border-t shadow-md shadow-pink-800 border-pink-800 rounded-md px-2 py-2 ">
+            <a href="https://www.mongodb.com" target="_blank"  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="nextjs" width="60" height="60"/> </a> 
+            
+          </motion.div>
+
+          <motion.div
+            variants={iconVariants(6.5)}
+            initial= "initial"
+            animate= "animate"
+
+            className="border-t shadow-md shadow-pink-800 border-pink-800 rounded-md px-2 py-2 ">
+            <a href="https://sass-lang.com" target="_blank"  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="nextjs" width="60" height="60"/> </a> 
             
           </motion.div>
 

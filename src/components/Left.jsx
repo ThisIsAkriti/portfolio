@@ -6,7 +6,7 @@ const container = (delay)=> ({
   visible:{
     x:0,
     opacity:1, 
-    transition:{duration:0.5 , delay:delay}
+    transition:{duration:1 , delay:delay}
   }
 })
 
@@ -23,32 +23,51 @@ const Left = () => {
         />
     
         <div className="flex flex-col items-start gap-y-3 2xl:gap-y-4 font-semibold text-xl mb-16 2xl:text-4xl">
-          <motion.div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300 "
-            variants={container(0.6)}
+          <div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300 "
+            
+          >
+            <motion.img
+            variants={container(0.5)}
             initial='hidden'
             animate="visible"
-          >
-            <img className="w-10 h-10 2xl:w-16 2xl:h-16" src="/home.png" alt="icon_Home" />
-            <Link to="home"><p className="cursor-pointer">HOME</p></Link>
-          </motion.div>
-    
-          <motion.div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300"
-            variants={container(1.2)}
+            className="w-10 h-10 2xl:w-16 2xl:h-16" src="/home.png" alt="icon_Home" />
+
+            <Link to="home"><motion.p
+            variants={container(0.5)}
             initial='hidden'
             animate="visible"
-          >
-            <img className="w-10 h-10 2xl:w-16 2xl:h-16" src="/project.png" alt="icon_Project" />
-            <Link to="projects"><p className="cursor-pointer">PROJECTS</p></Link>
-          </motion.div>
+            className="cursor-pointer">HOME</motion.p></Link>
+          </div>
     
-          <motion.div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300"
+          <div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300"
+           
+          >
+            <motion.img 
+            variants={container(1)}
+            initial='hidden'
+            animate="visible"
+            className="w-10 h-10 2xl:w-16 2xl:h-16" src="/project.png" alt="icon_Project" />
+            <Link to="projects"><motion.p 
+            variants={container(1)}
+            initial='hidden'
+            animate="visible"
+            className="cursor-pointer">PROJECTS</motion.p></Link>
+          </div>
+    
+          <div className="flex justify-center items-center gap-x-3 hover:scale-105 transition-transform duration-300"
+            
+          >
+            <motion.img 
             variants={container(1.5)}
             initial='hidden'
             animate="visible"
-          >
-            <img className="w-10 h-10 2xl:w-16 2xl:h-16" src="/about_me.png" alt="icon_aboutMe" />
-            <Link to="about"><p className="cursor-pointer">ABOUT ME</p></Link>
-          </motion.div>
+            className="w-10 h-10 2xl:w-16 2xl:h-16" src="/about_me.png" alt="icon_aboutMe" />
+            <Link to="about"><motion.p 
+            variants={container(1.5)}
+            initial='hidden'
+            animate="visible"
+            className="cursor-pointer">ABOUT ME</motion.p></Link>
+          </div>
         </div>
     
         <div className="flex flex-col">
